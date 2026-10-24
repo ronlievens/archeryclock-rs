@@ -1,0 +1,16 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# IntelliJ
+*.iml
+.idea/
+
+# OpenChamber
+/.openchamber/
+
+# Cargo
+/target
+
+# Project
+/orginal-src/
