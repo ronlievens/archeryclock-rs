@@ -29,14 +29,13 @@ impl Countdown {
     }
 
     pub fn tick(&mut self) {
-        if self.seconds > 0 && self.phase != Phase::Wait {
+        if self.seconds > 0 && self.phase != Phase::Wait && self.phase != Phase::PreCount && self.phase != Phase::Emergency {
             self.seconds -= 1;
-            if self.phase == Phase::Green && self.seconds <= 30 {
-                self.phase = Phase::Orange;
-            }
-            if self.phase == Phase::Orange && self.seconds <= 10 {
-                self.phase = Phase::Red;
-            }
+        }
+        if self.phase == Phase::Green && self.seconds <= 30 {
+            self.phase = Phase::Orange;
+        } else if self.phase == Phase::Orange && self.seconds <= 10 {
+            self.phase = Phase::Red;
         }
     }
 

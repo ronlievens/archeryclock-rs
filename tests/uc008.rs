@@ -7,10 +7,10 @@ fn uc008_transitions() {
     let mut c = Countdown::default();
     c.start(90);
     assert_eq!(c.phase, Phase::Green);
-    c.seconds = 35;
+    c.seconds = 31;
     c.tick();
     assert_eq!(c.phase, Phase::Orange);
-    c.seconds = 15;
+    c.seconds = 11;
     c.tick();
     assert_eq!(c.phase, Phase::Red);
     c.next();
