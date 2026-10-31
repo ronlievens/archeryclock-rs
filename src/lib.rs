@@ -6,3 +6,4 @@ pub mod net;
 pub mod core;
 pub mod scenario;
 pub mod audio;
+pub mod display;
