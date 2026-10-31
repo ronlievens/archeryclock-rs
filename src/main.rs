@@ -1,3 +1,6 @@
+mod config;
+mod arch;
+
 fn main() {
-    println!("Hello, world!");
+    let _startup = arch::startup::Startup::init();
 }
