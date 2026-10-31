@@ -9,3 +9,4 @@ pub mod audio;
 pub mod display;
 pub mod hw;
 pub mod ap;
+pub mod stream;
