@@ -67,3 +67,18 @@ impl Settings {
         Ok(())
     }
 }
+
+#[derive(Clone, Debug)]
+pub struct Archery {
+    pub archerysystem: String,
+    pub followsystem: String,
+}
+
+impl Default for Archery {
+    fn default() -> Self {
+        Archery {
+            archerysystem: "fita".to_string(),
+            followsystem: "fita".to_string(),
+        }
+    }
+}
